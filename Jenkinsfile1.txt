@@ -1,6 +1,6 @@
 pipeline {
-    agent any
-
+    node ('vm-test') {
+    
     stages {
         stage('1-Build') {
             steps {
@@ -24,4 +24,5 @@ pipeline {
             }
         }
     }
+}
 }
